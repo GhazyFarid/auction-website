@@ -1,0 +1,76 @@
+import {
+  Home,
+  Car,
+  Calendar,
+  User,
+  CreditCard,
+  DollarSign,
+  BarChart3,
+  Settings,
+} from "lucide-react";
+
+export const menuItems = [
+  {
+    id: "dashboard",
+    label: "Dashboard",
+    icon: Home,
+    description: "Overview & statistik",
+    path: "/dashboard",
+  },
+  {
+    id: "lelang-motor",
+    label: "Lelang Motor",
+    icon: Home,
+    description: "Kelola lelang motor",
+    path: "/dashboard/lelang-motor",
+  },
+  {
+    id: "lelang-mobil",
+    label: "Lelang Mobil",
+    icon: Car,
+    description: "Kelola lelang mobil",
+    path: "/dashboard/lelang-mobil",
+  },
+  {
+    id: "jadwal",
+    label: "Jadwal Lelang",
+    icon: Calendar,
+    description: "Jadwal & kalender lelang",
+    path: "/dashboard/jadwal",
+  },
+  {
+    id: "transaksi",
+    label: "Transaksi",
+    icon: CreditCard,
+    description: "Riwayat transaksi",
+    path: "/dashboard/transaksi",
+  },
+  {
+    id: "deposit",
+    label: "Deposit",
+    icon: DollarSign,
+    description: "Kelola deposit user",
+    path: "/dashboard/deposit",
+  },
+  {
+    id: "laporan",
+    label: "Laporan",
+    icon: BarChart3,
+    description: "Laporan & analitik",
+    path: "/dashboard/laporan",
+  },
+  {
+    id: "profil",
+    label: "Profil",
+    icon: User,
+    description: "Pengaturan profil",
+    path: "/profile",
+  },
+  {
+    id: "pengaturan",
+    label: "Pengaturan",
+    icon: Settings,
+    description: "Konfigurasi sistem",
+    path: "/dashboard/pengaturan",
+  },
+];

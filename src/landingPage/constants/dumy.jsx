@@ -26,6 +26,6 @@ export const banners = [
     image:
       "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop",
     cta: "Daftar Sekarang",
-    path: "/",
+    path: "/auth",
   },
 ];

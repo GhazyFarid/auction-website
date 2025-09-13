@@ -17,7 +17,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-const AuctionPlatform = () => {
+const LandingPageRoutes = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navigation />
@@ -39,4 +39,4 @@ const AuctionPlatform = () => {
   );
 };
 
-export default AuctionPlatform;
+export default LandingPageRoutes;
