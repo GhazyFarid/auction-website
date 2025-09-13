@@ -1,7 +1,7 @@
-export const daftarPage = [
-  { key: "beranda", label: "Beranda" },
-  { key: "lot-motor", label: "Lot Motor" },
-  { key: "lot-mobil", label: "Lot Mobil" },
-  { key: "jadwal", label: "Jadwal Lelang" },
-  { key: "tentang", label: "Tentang Kami" },
+export const navItems = [
+  { path: "/", label: "Beranda" },
+  { path: "/lot-motor", label: "Lot Motor" },
+  { path: "/lot-mobil", label: "Lot Mobil" },
+  { path: "/jadwal", label: "Jadwal Lelang" },
+  { path: "/tentang", label: "Tentang Kami" },
 ];

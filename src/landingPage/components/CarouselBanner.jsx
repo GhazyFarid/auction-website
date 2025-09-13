@@ -1,8 +1,10 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { banners } from "../constants/dumy";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export const CarouselBanner = ({ goto }) => {
+export const CarouselBanner = () => {
+  const navigate = useNavigate();
   const [currentBanner, setCurrentBanner] = useState(0);
 
   // Auto-advance banner
@@ -35,7 +37,7 @@ export const CarouselBanner = ({ goto }) => {
               <p className="text-xl md:text-2xl mb-8">{banner.subtitle}</p>
               <button
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
-                onClick={() => goto(banner.navigate)}
+                onClick={() => navigate(banner.path)}
               >
                 {banner.cta}
               </button>

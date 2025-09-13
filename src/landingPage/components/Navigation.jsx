@@ -1,7 +1,10 @@
 import { Car } from "lucide-react";
-import { daftarPage } from "../constants/daftarMenu";
+import { Link, useLocation } from "react-router-dom";
+import { navItems } from "../constants/daftarMenu";
 
-export const Navigation = ({ currentPage, goTo }) => {
+export const Navigation = () => {
+  const { pathname } = useLocation();
+
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
@@ -14,18 +17,18 @@ export const Navigation = ({ currentPage, goTo }) => {
           </div>
 
           <div className="hidden md:flex space-x-8">
-            {daftarPage.map((item) => (
-              <button
-                key={item.key}
-                onClick={() => goTo(item.key)}
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  currentPage === item.key
+                  pathname === item.path
                     ? "text-blue-600 border-b-2 border-blue-600"
                     : "text-gray-700 hover:text-blue-600"
                 }`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </div>
 

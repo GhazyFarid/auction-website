@@ -8,7 +8,7 @@ export const banners = [
     image:
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop",
     cta: "Lihat Motor",
-    navigate: "lot-motor",
+    path: "/lot-motor",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const banners = [
     image:
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=400&fit=crop",
     cta: "Lihat Mobil",
-    navigate: "lot-mobil",
+    path: "/lot-mobil",
   },
   {
     id: 3,
@@ -26,6 +26,6 @@ export const banners = [
     image:
       "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop",
     cta: "Daftar Sekarang",
-    navigate: "",
+    path: "/",
   },
 ];

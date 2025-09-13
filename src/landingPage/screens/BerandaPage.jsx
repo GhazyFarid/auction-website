@@ -1,12 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { CarouselBanner } from "../components/carouselBanner";
 import { VehicleCard } from "../components/VehicleCard";
 import { mobilRecommendations } from "../constants/dataDumyMobil";
 import { motorRecommendations } from "../constants/dataDumyMotors";
 
-const BerandaPage = ({ goTo }) => {
+const BerandaPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <CarouselBanner goto={goTo} />
+      <CarouselBanner />
 
       {/* Rekomendasi Motor */}
       <section className="py-16 bg-gray-50">
@@ -29,8 +32,7 @@ const BerandaPage = ({ goTo }) => {
           <div className="text-center mt-8">
             <button
               onClick={() => {
-                console.log("handle Click motor");
-                goTo("lot-motor");
+                navigate("/lot-motor");
               }}
               className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
             >
@@ -59,8 +61,7 @@ const BerandaPage = ({ goTo }) => {
           <div className="text-center mt-8">
             <button
               onClick={() => {
-                console.log("handle Click mobil");
-                goTo("lot-mobil");
+                navigate("/lot-mobil");
               }}
               className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
             >
